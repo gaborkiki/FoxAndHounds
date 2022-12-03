@@ -3,7 +3,7 @@ package hu.krisz.foxandhounds.service.command;
 import hu.krisz.foxandhounds.model.GState;
 import hu.krisz.foxandhounds.service.exception.ExitException;
 
-public class Exit {
+public class Exit extends Throwable {
     private GState gameState;
 
     public Exit(GState gameState) {
